@@ -1,0 +1,36 @@
+fun main() {
+    println("Hello, world!")
+    val popcorn = 5
+    var cola = "Dobry"
+    println(popcorn)
+    println(cola)
+    cola = "Coca"
+    println(cola)
+    println("Coca-${cola}")
+    val customList: List<String> = listOf("csdc", "cdscds")
+    println("${customList} --- ${customList[0]}---${customList.last()}")
+    val mutList: MutableList<Int> = mutableListOf(1,4,5)
+    println("${mutList} --- ${mutList[1]}--- ${mutList.first()}")
+    println("csdc" in customList)
+    mutList.add(6)
+    println("${mutList}")
+    mutList.remove(6)
+    println("${mutList}")
+    val cSet: Set<String> = setOf("csdc","34fvf")
+    val mSet: MutableSet<String> = mutableSetOf("rfersc", "cecer")
+    mSet.add("cdscdcd")
+    println("${mSet}")
+    println(mSet.count())
+    mSet.remove("cdscdcd")
+    println("${mSet}")
+    println(mSet.count())
+    val cMap: Map<String, Int> = mapOf("apple" to 100, "kiwi" to 190)
+    val mMap: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190)
+    println(cMap["apple"])
+    mMap["cocco"] = 3444
+    println(mMap.containsKey("cocco"))
+    mMap.remove("cocco")
+    println(mMap.containsKey("cocco"))
+    println(mMap.keys)
+    println(mMap.values)
+}
